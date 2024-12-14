@@ -1,0 +1,42 @@
+@layer utilities {
+  .military-texture {
+    background-image: 
+      linear-gradient(45deg, #4E5A3C 25%, transparent 25%),
+      linear-gradient(-45deg, #4E5A3C 25%, transparent 25%),
+      linear-gradient(45deg, transparent 75%, #4E5A3C 75%),
+      linear-gradient(-45deg, transparent 75%, #4E5A3C 75%);
+    background-size: 20px 20px;
+    background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+    opacity: 0.05;
+  }
+
+  .tactical-grid {
+    background-size: 50px 50px;
+    background-image:
+      linear-gradient(to right, #D5B803 1px, transparent 1px),
+      linear-gradient(to bottom, #D5B803 1px, transparent 1px);
+    opacity: 0.05;
+  }
+
+  .targeting-reticle::before,
+  .targeting-reticle::after {
+    content: '';
+    position: absolute;
+    background-color: #D5B803;
+    opacity: 0.2;
+  }
+
+  .targeting-reticle::before {
+    width: 2px;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .targeting-reticle::after {
+    height: 2px;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

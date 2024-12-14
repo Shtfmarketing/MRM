@@ -1,0 +1,50 @@
+:root {
+  /* Primary Colors */
+  --color-primary: #D5B803;
+  --color-primary-dark: #B89B02;
+  --color-primary-light: #E6CA1A;
+
+  /* Military Greens */
+  --color-military: #4E5A3C;
+  --color-military-dark: #2C331F;
+  --color-military-light: #6B7850;
+  --color-military-sage: #8F9779;
+  --color-military-forest: #3B4429;
+  --color-military-camo: #515844;
+
+  /* Earth Tones */
+  --color-earth: #928E72;
+  --color-earth-dark: #655E52;
+  --color-earth-light: #BEB8A2;
+  --color-earth-sand: #D6C6B3;
+  --color-earth-brown: #594A3C;
+  --color-earth-tan: #C5B7A3;
+
+  /* Tactical Colors */
+  --color-tactical: #181715;
+  --color-tactical-dark: #0F0E0D;
+  --color-tactical-light: #242220;
+  --color-tactical-gray: #363636;
+  --color-tactical-charcoal: #2A2A2A;
+  --color-tactical-steel: #4A4A4A;
+
+  /* Accent Colors */
+  --color-accent-red: #BF1D40;
+  --color-accent-blue: #1D2951;
+  --color-accent-gold: #D5B803;
+  --color-accent-silver: #C0C0C0;
+  --color-accent-bronze: #CD7F32;
+}
+
+/* Gradient Mixins */
+.gradient-military {
+  background: linear-gradient(to right, var(--color-military-dark), var(--color-military-light));
+}
+
+.gradient-tactical {
+  background: linear-gradient(to bottom, var(--color-tactical-dark), var(--color-tactical-light));
+}
+
+.gradient-accent {
+  background: linear-gradient(to right, var(--color-accent-gold), var(--color-military));
+}
